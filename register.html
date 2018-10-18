@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="css/font-face.css" rel="stylesheet">
+    <link rel="icon" type="type/png" href="assets/logo-link copy.png">
+    <script src="js/jquery-3.3.1.min.js"></script>
+
+    <link rel="stylesheet" href="css/style.css">
+
+    <title>JS Yo-Yo | User Registration</title>
+</head>
+
+<body>
+    <div class="background-register">
+    </div>
+
+    <div class="navbar-container">
+        <div class="navbar navbar-default-color">
+            <ul class="logo-ul">
+                <li class="logo-li">
+                    <a class="logo-a" href="home.html">
+                        <img class="logo-img" src="assets/logo/logo copy.png" alt="">
+                    </a>
+                </li>
+            </ul>
+            <ul class="expand">
+                <li id="expand-collapse">
+                    <strong>+</strong>
+                </li>
+            </ul>
+            <ul class="item">
+                <li class="">
+                    <a href="home.html">Home </a>
+                </li>
+    
+                <li>
+                    <a href="tutorial.html">Tutorials</a>
+                </li>
+    
+                <li class="dropdown">
+                    <a class="dropbtn">Types</a>
+                    <div class="dropcont">
+                        <a href="basic.html">Basic</a>
+    
+                        <a href="professional.html">Professional</a>
+                    </div>
+                </li>
+    
+                <li>
+                    <a href="contact.html">Contact</a>
+                </li>
+    
+                <li>
+                    <a href="register.html" class="navbar-currentpage">Registration</a>
+                </li>
+            </ul>
+        </div>
+    </div>
+
+    <div class="container-box container-perc30 container-opatrue container-regist">
+        <p class="box-title">Registration Form</p>
+        <br>
+        <form action="registSuccess.html">
+            <label for="name">Name</label>
+            <br>
+            <input id="_username" name="username" type="text">
+            <br>
+            <br>
+
+            <label for="email">Email</label>
+            <br>
+            <input id="email" name="email" type="email">
+            <br>
+            <br>
+
+            <label for="password">Password</label>
+            <br>
+            <input id="password" name="password" type="password">
+            <br>
+            <br>
+
+            <label for="name">Address</label>
+            <br>
+            <textarea class="height-textarea" name="address" id="address"></textarea>
+            <br>
+            <br>
+
+            <label for="gender">Gender</label>
+            <br> Male
+            <input value="male" name="genderRadio" id="gender" type="radio"> &nbsp; &nbsp; Female
+            <input value="female" name="genderRadio" id="gender" type="radio">
+            <br>
+            <br>
+
+            <label for="City">City</label>
+            <select name="city" id="city">
+                <option value="nothing">-Choose-</option>
+                <option value="Jakarta">Jakarta</option>
+                <option value="Bandung">Bandung</option>
+                <option value="Tangerang">Tangerang</option>
+            </select>
+            <br>
+            <br>
+
+            <button type="button" class="submit-button">Submit</button>
+            <br>
+            <br>
+            <p id="error-message"></p>
+        </form>
+    </div>
+
+
+    <script src="js/register.js"></script>
+    <script src="js/navbarResponsive.js"></script>
+
+</body>
+
+</html>
